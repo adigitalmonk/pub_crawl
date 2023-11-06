@@ -22,7 +22,7 @@ defmodule PubCrawl.MixProject do
   # Run "mix help deps" to learn about dependencies.
   def deps do
     [
-        {:echo, github: "adigitalmonk/echo", branch: "main"},
+        {:tango, github: "adigitalmonk/tango", branch: "main"},
         {:phoenix_pubsub, "~> 2.0"}
     ]
   end
