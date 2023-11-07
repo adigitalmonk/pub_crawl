@@ -10,7 +10,7 @@ defmodule PubCrawl.Application do
     children = [
       {Phoenix.PubSub, name: PubCrawl.PubSub},
       PubCrawl.KV,
-      PubCrawl.Tango,
+      {Tango, port: 4040, handler: PubCrawl.Tango.Handler}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
